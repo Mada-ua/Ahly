@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Club of the century</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+<p id="pd"></p>
+
+
+<button onclick="f();"> More </button>
+
+<script>
+    
+        function f(){
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 12) 
+         {
+            greeting = "Good morning";
+         } 
+        else if (time < 20)
+         {
+            greeting = "Good day";
+         } 
+        else {
+          greeting = "Good evening";
+             }
+          document.getElementById("pd").innerHTML = greeting;
+
+        }
+    
+    
+</script>
+<div id = "div1">
+
+<img src="head1.jpg" height = "600" width ="1500">
+
+</div>
+<hr>
+<br>
+<div id = "div2">
+<p id="p2">Al Ahly Sporting Club, commonly referred to as Al Ahly, is an Egyptian professional sports club based in Cairo........................... 
+
+</p>
+<button onclick="myFunction()"> Learn More </button>
+<script src="j.js">
+
+</script>
+</div>
+<hr>
+<br>
+<div id = "div3">
+<h2> Legends Of The Club:- </h2>
+<ul>
+<li> Saleh Selim <br><img src="p1.jpg" height = "350" width ="350"> </li>
+<li> Mahmoud Elkahteeb<br><img src="p2.jpg" height = "350" width ="350"> </li>
+<li> Mohamed Abo Treka<br><img src="p3.jpg" height = "350" width ="350"> </li>
+</ul>
+
+</div>
+<hr>
+<br>
+<div id = "div4">
+ <h1> Registration Form </h1>
+     <div id="reg-form">
+     <form action="" method="">
+        <label for="first-name"> First Name:</label>
+        <input type="text" name="first-name" placeholder="Mohamed" required>
+        <label for="last-name"> Last Name:</label>
+        <input type="text" name="last-name" placeholder="Ebrahim" required>
+     <br>
+        <label for="gender-choice">Male</label>
+        <input type="radio" name="gender-choice" value="choice-1">
+        <label for="gender-choice"> Female</label>
+        <input type="radio" name="gender-choice" value="choice-2">
+       <br>
+        <label for="email"> Email: </label>
+        <input type="email" name="email" placeholder="Mada-ua@github.com">
+        <label for="password"> Password: </label>
+        <input type="password" name="password">
+       <br>
+          <label for="Month"> Birthday  </label>
+          <select name="Month">
+           <option value="0" selected disabled> Month </option>
+           <option value="1"> January </option>
+           <option value='2'>February</option>
+    <option value='3'>March</option>
+    <option value='4'>April</option>
+    <option value='5'>May</option>
+    <option value='6'>June</option>
+    <option value='7'>July</option>
+    <option value='8'>August</option>
+    <option value='9'>September</option>
+    <option value='10'>October</option>
+    <option value='11'>November</option>
+    <option value='12'>December</option>
+
+         </select>
+<br>
+         <label for="agree"> I agree to all conditions of the form</label>
+         <input type="checkbox" name="agree"> 
+         <button type="submit">Submit </button> 
+         <button type="reset"> Reset </button>   
+       
+    </form>
+
+
+</div>
+<a href="https://www.alahlyegypt.com/ar">Alahly Official Site</a>
+</body>
+
+</html>
